@@ -60,6 +60,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    .buttonWrap{
+        button,a{
+            display: inline-block;
+            // width: rem(30);
+            .iconWrap{
+                // position: absolute;
+            }
+        }
+    }
 }
 .centerNav{
     display: flex;
@@ -92,6 +101,9 @@ header{
     a,button{
         padding: 0;
         justify-content: flex-end;
+        &:hover{
+            background-color: transparent;
+        }
     }
     button{
         padding: 0 rem(32);

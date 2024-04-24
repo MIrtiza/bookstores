@@ -79,13 +79,19 @@ export const Header = () => {
                                     <Link href="/favorites">
                                         {/* <FavoriteBorderOutlined /> */}
                                         {/* <span> {favCount} </span> */}
+                                            <div className='iconWrap'>
                                         <CustomBadge iconComponent={ <FavoriteBorderOutlined />} count={favItems} />
+                                        </div>
                                     </Link>
                                     <Button type="button">
+                                    <div className='iconWrap'>
                                             <Person2Outlined />
+                                            </div>
                                         </Button>
                                     <Link href="/cart">
+                                    <div className='iconWrap'>
                                     <CustomBadge iconComponent={ <ShoppingBagOutlined />} count={cartCount} />
+                                    </div>
                                     </Link>
                                   
                                     
