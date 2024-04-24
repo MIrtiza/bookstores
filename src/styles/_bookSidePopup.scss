@@ -1,0 +1,123 @@
+.bookSidePopup {
+    background-color: $white;
+    height: 100vh;
+    width: rem(360);
+    position: fixed;
+    right: -120%;
+    top: 0;
+    z-index: 99;
+    transition: .5s;
+    padding: rem(32);
+    overflow-y: auto;
+    &.true {
+        right: 0;
+    }
+}
+
+.btnClose {
+    color: $black;
+    position: absolute !important;
+    right: 0;
+    top: rem(20);
+
+}
+
+.popHead {
+    padding: rem(20) rem(60) 0 rem(60);
+    text-align: center;
+    h6{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .imgWrap {
+        margin: rem(26) 0;
+        height: rem(260);
+        img {
+            height: 100%;
+            object-fit: contain;
+            border-radius: rem(18);
+        }
+    }
+}
+
+.popBody {
+    padding-bottom: rem(80);
+    ul {
+        padding: 0;
+        margin: rem(30) 0;
+        display: flex;
+        justify-content: space-between;
+        background-color: $primary;
+        border-radius: rem(18);
+
+        li {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            strong {
+                color: $white;
+            }
+
+            span {
+                color: $brown;
+            }
+
+            &:before {
+                content: '';
+                width: 1px;
+                height: rem(25);
+                background-color: $white;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateY(60%);
+            }
+
+            &:last-child {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.plotDescriotion {
+    h6{
+        margin-bottom: rem(10);
+    }
+  p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+
+    margin-bottom: rem(18);
+  }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}

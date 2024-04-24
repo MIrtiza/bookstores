@@ -1,0 +1,17 @@
+.widgetAside{
+    width: 100%;
+}
+.filterCatogory{
+    background-color: $white;
+    border-radius: rem(8);
+}
+.priceRangeWidget{
+    background-color: $white;
+    margin-top: rem(32);
+    padding: rem(16) rem(32);
+    border-radius: rem(8);
+    .MuiTypography-span{
+        display: block;
+        margin-bottom: rem(16);
+    }
+}

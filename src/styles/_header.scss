@@ -1,0 +1,179 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 0 0 rem(16) 0;
+    background-color: $white;
+}
+.headerBg{
+    height: rem(60);
+    width: 100%;
+}
+.notifyBar{
+    margin-bottom: rem(16);
+}
+.logoSide{
+    display: flex;
+}
+.mainLogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span{
+       margin: rem(0) rem(0) rem(0) rem(10);
+       font-weight: 600;
+       color: $black;
+       font-size: rem(13);
+    }
+}
+.searchBox{
+    background-color: rgba($lightpurple,0.2);
+    padding: rem(5) rem(20) rem(5) rem(10);
+    margin-left: rem(32);
+    width: 30%;
+    .formControl{
+        
+    }
+    svg{
+        font-size: rem(30);
+    }
+    .MuiFormControl-root{
+        width: 100%;
+    }
+    div{
+        
+        &:before{
+            display: none;
+        }
+    }
+    input{
+        width: 100%;
+        font-size: rem(13);
+        &:focus, &:active{
+            outline: 0;
+        }
+    }
+}
+.topNav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.centerNav{
+    display: flex;
+    align-items: center;
+}
+.whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    svg{
+        color: green;
+    }
+    a{
+        font-size: rem(13);
+        display: block;
+        margin-left: rem(10);
+        letter-spacing: 2px;
+        color: $black;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+
+.buttonWrap{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a,button{
+        padding: 0;
+        justify-content: flex-end;
+    }
+    button{
+        padding: 0 rem(32);
+        color: $primary;
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+}
+
+div#transition-popper {
+    width: rem(200);
+}
+
+.profileDropdown{
+    
+    span{
+        font-size: rem(12);
+        color: $black;
+        font-weight: 600;
+        display: inline-block;
+        padding-right: rem(10);
+    }
+}
+
+
+.notifyBar{
+    background-color: $black;
+    text-align: center;
+    padding: rem(5) 0;
+    p{
+        color: $white;
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    header{
+        padding: 0 0 rem(5) 0;
+    }
+    .notifyBar{
+        margin-bottom: rem(5);
+        p{
+            font-size: rem(14);
+        }
+    }
+    .mainLogo{
+        width: rem(40);
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+        span{
+            font-size: rem(12);
+        }
+    }
+    .searchBox{
+        width: 100%;
+    }
+    .buttonWrap{
+        width: 100%;
+        button,a{
+            padding: 0 rem(8);
+            min-width: rem(20);
+            height: rem(20);
+        }
+       
+    }
+}

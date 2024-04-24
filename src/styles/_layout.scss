@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    // font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Kalam', cursive;
+}
+
+body {
+    background-color: $brown;
+}
+
+h1 {
+    font-size: rem(64);
+}
+
+h2 {
+    font-size: rem(46);
+    margin-bottom: rem(36);
+}
+
+h3 {
+    font-size: rem(44);
+}
+
+h4 {
+    font-size: rem(34);
+}
+
+h5 {
+    font-size: rem(26);
+}
+
+h6 {
+    font-size: rem(20);
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+p {
+    font-size: rem(18);
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+span, a{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+.btn{
+    width: 100%;
+    padding: rem(5) rem(2);
+    border: 1px solid $black;
+    font-size: rem(12) !important;
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: $white !important;
+    border-radius: rem(4);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    &.btnPrimary{
+        font-family: 'Goudy Bookletter 1911', serif;
+        background-color: $primary;
+        border: 1px solid $white;
+        &.btnradius{
+            padding: rem(10) rem(2);
+            border-radius: rem(20);
+        }
+    }
+    &.btnWhite{
+        background-color: $white;
+        color: $black !important;
+        border: 1px solid $primary;
+    }
+
+}
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.loading{
+    &:before{
+        content: '';
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+    &:after{
+        content: '';
+    }
+}
+
+
+// Laptops large devices (desktops, 1600px and up)
+@media (min-width: 1600px) and (max-width: 1699.98px) {
+}
+
+// Laptops large devices (desktops, 1400px and up)
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+}
+
+// Laptops small devices (desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .btn{
+        &.btnPrimary{
+            &:hover, &:focus{
+                background-color: $secondary;
+            }
+        }
+        &.btnWhite{
+            &:hover, &:focus{
+                background-color: $primary;
+                color: $white !important;
+            }
+        }
+
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+ 
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sm-hidden{
+        display: none;
+    }
+    .sm-show{
+        display: block;
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .sm-hidden{
+        display: none;
+    }
+    .sm-show{
+        display: block;
+    }
+}
