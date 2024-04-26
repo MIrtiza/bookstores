@@ -262,7 +262,7 @@ div#transition-popper {
   left: -0.625rem;
   width: 100%;
   height: 1.875rem;
-  background-image: url("../Images/reck.png");
+  background-image: url("https://i.ibb.co/4P2MDNm/reck.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -270,7 +270,7 @@ div#transition-popper {
 .bookBg {
   height: 17.5rem;
   width: 18.125rem;
-  background-image: url("../Images/bookBg.png");
+  background-image: url("https://i.ibb.co/G9Nv4Jv/bookbg.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
