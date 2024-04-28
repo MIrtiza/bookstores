@@ -375,6 +375,11 @@
     prop-types "^15.8.1"
     react-is "^18.2.0"
 
+"@netlify/plugin-nextjs@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@netlify/plugin-nextjs/-/plugin-nextjs-5.1.2.tgz#ecbe6ed3443e63b6ffa0a05d201a3cc4fa225fd3"
+  integrity sha512-rftBlZmrkxy8zeXZ/tT2u/v2iIZd9s0cV7MdtjUFOgizjhtY0fCZEUQ7OIEQIMogzGNMDXFcb84HXX9a8OZ8/w==
+
 "@next/env@13.2.4":
   version "13.2.4"
   resolved "https://registry.yarnpkg.com/@next/env/-/env-13.2.4.tgz#8b763700262b2445140a44a8c8d088cef676dbae"
